@@ -12,7 +12,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Fechamento de Compra</title>
+    <title>Área do Cliente</title>
   </head>
   <body>
     <div class="d-flex flex-column wrapper">
@@ -41,15 +41,11 @@
             <div class="align-self-end">
               <ul class="navbar-nav">
                 <li class="navbar-item">
-                  <a href="cadastro.html" class="nav-link text-white"
+                  <a href="cliente_pedidos.html" class="nav-link text-white"
                     >Logado como <b>Username</b></a
                   >
                 </li>
                 <li class="navbar-item">
-                  <a href="login.html" class="nav-link text-white">Sair</a>
-                </li>
-                <li class="navbar-item">
-
                   <span
                     class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
                     title="5 produtos(s) no carrinho"
@@ -69,59 +65,38 @@
       </nav>
       <main class="flex-fill">
         <div class="container">
-          <h1>Selecione o Endereço de Entrega</h1>
-          <h3 class="mb-4">
-            Selecione o endereço de entrega e clique em <b>Continuar</b> para
-            prosseguir para a <b>selecão da forma de pagamento</b>
-          </h3>
-          <div
-            class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-0"
-          >
-            <div class="mb-4 mx-2 flex-even">
-              <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end1"/>
-              <label class="btn btn-outline-success p-4 h-100 w-100" for="end1">
-                <h3>
-                    <b class="text-dark">Minha Casa</b>
-                    <hr>
-                    <b>Diego Melo</b><br>
-                    Rua Virtual Inexistente, 9872 <br>
-                    BootstrapLândia/Pc <br>
-                    CEP 01.010-101
-                </h3>
-              </label>
-            </div>
-            <div class="mb-4 mx-2 flex-even">
-              <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end2"/>
-              <label class="btn btn-outline-success p-4 h-100 w-100" for="end2">
-                <h3>
-                    <b class="text-dark">Escritório</b>
-                    <hr>
-                    <b>Diego Melo</b><br>
-                    Rua Virtual Inexistente, 9872 <br>
-                    BootstrapLândia/Pc <br>
-                    CEP 01.010-101
-                </h3>
-              </label>
-            </div>
-            <div class="mb-4 mx-2 flex-even">
-              <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="end3"/>
-              <label class="btn btn-outline-success p-4 h-100 w-100" for="end3">
-                <h3>
-                    <b class="text-dark">Casa de Paria</b>
-                    <hr>
-                    <b>Diego Melo</b><br>
-                    Rua Virtual Inexistente, 9872 <br>
-                    BootstrapLândia/Pc <br>
-                    CEP 01.010-101
-                </h3>
-              </label>
-            </div>
-        </div>
-        <div class="text-end border border-top-0 rounded-bottom p-4 pb-0">
-            <a href="fechamento_itens.html" class="btn btn-outline-danger btn-lg mb-3">Voltar ao Carrinho</a>
-            <a href="fechamento_pagamento.html" class="btn btn-outline-success btn-lg ms-2 mb-3">Continuar</a>
-        </div>
-        </div>
+          <h1>Minha Conta</h1>
+          <div class="row gx-3">
+              <div class="col-4">
+                  <div class="list-group">
+                      <a href="/cliente_dados.html" class="list-group-item list-group-item-action bg-success text-light">
+                          <i class="bi-person fs-6"></i> Dados Pessoais
+                      </a>
+                      <a href="/cliente_contatos.html" class="list-group-item list-group-item-action">
+                          <i class="bi-mailbox fs-6"></i> Contatos
+                      </a>
+                      <a href="/cliente_endereco.html" class="list-group-item list-group-item-action">
+                          <i class="bi-house-door fs-6"></i> Endereço
+                      </a>
+                      <a href="/cliente_pedidos.html" class="list-group-item list-group-item-action">
+                          <i class="bi-truck fs-6"></i> Pedidos
+                      </a>
+                      <a href="/cliente_favoritos.html" class="list-group-item list-group-item-action">
+                          <i class="bi-heart fs-6"></i> Favoritos
+                      </a>
+                      <a href="/cliente_senha.html" class="list-group-item list-group-item-action">
+                          <i class="bi-lock fs-6"></i> Alterar Senha
+                      </a>
+                      <a href="/index.html" class="list-group-item list-group-item-action">
+                          <i class="bi-door-open fs-6"></i> Sair
+                      </a>
+                  </div>
+              </div>
+              <div class="col-8">
+
+              </div>
+          </div>
+      </div>
       </main>
       <footer class="border-top text-muted bg-light">
         <div class="container">
